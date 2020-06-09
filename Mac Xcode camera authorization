@@ -10,13 +10,13 @@ NSCameraUsageDescription key with a string value explaining to the user how the 
 
 so i tried to add Info.plist(not 'i') in correct path with correct key(Privacy-Camera Usage Description,before vesion may NSCameraUsageDescription) 
 and Value($(PRODUCT_NAME) camera use)(some say it is necessary,not optional).
-i think, almost user may be try this method to solve problem.
+i think, almost user may be try this method to solve problem.(it is necessary!)
 ref) https://stackoverflow.com/questions/53190412/accessing-webcam-in-xcode-with-opencv-c
 
 But!,the error occurs yet...
 
 I solved this problem with copy Info.plist->Xcode Navigator->open Products->your exec->then, right click->
-show in finder-> paste Info.plist.
+show in finder-> paste Info.plist.(as i said, above process is first!)
 
 ref) https://stackoverflow.com/questions/52541086/nscamerausagedescription-needed-for-c-projects-in-xcode-for-macos-mojave
 
