@@ -1,0 +1,25 @@
+I had trouble configuring xcode camera authorization.
+
+I record this help someone like me(Mac os, xcode user, opencv)
+
+My issue is when call 'VideoCapture cap' with below message:
+
+[access] This app has crashed because it attempted to access privacy-sensitive 
+data without a usage description.  The app's Info.plist must contain an 
+NSCameraUsageDescription key with a string value explaining to the user how the app uses this data.
+
+so i tried to add Info.plist(not 'i') in correct path with correct key(Privacy-Camera Usage Description,before vesion may NSCameraUsageDescription) 
+and Value($(PRODUCT_NAME) camera use)(some say it is necessary,not optional).
+i think, almost user may be try this method to solve problem.
+ref) https://stackoverflow.com/questions/53190412/accessing-webcam-in-xcode-with-opencv-c
+
+But!,the error occurs yet...
+
+I solved this problem with copy Info.plist->Xcode Navigator->open Products->your exec->then, right click->
+show in finder-> paste Info.plist.
+
+ref) https://stackoverflow.com/questions/52541086/nscamerausagedescription-needed-for-c-projects-in-xcode-for-macos-mojave
+
+i hope this method help you relieve f stress..
+
+good luck!
